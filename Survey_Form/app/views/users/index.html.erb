@@ -1,0 +1,22 @@
+<h1>Users#index</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+
+<form action="/index" method="POST">
+<input type="hidden" name="authenticity_token" value="<% = form_authenticity_token%>">
+Your Name : <input type="text" name="name">
+Dojo Location : <select name="location">
+                <option>Mountain View </option>
+                <option> Seattle </option>
+                <option> Dallas </option>
+                </select>
+Favorite Language : <select name="language">
+                    <option>Ruby</option>
+                    <option>Javascript</option>
+                    <option>Python</option>
+                    </select>
+Comments (optional): <textarea name="comments"></textarea>
+<input type="submit" value="Submit">
+</form>                    
+
+
+

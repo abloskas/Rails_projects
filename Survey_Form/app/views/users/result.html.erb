@@ -1,0 +1,14 @@
+<h1>Users#result</h1>
+<p>Find me in app/views/users/result.html.erb</p>
+
+ <% if flash[:success] %>
+        <p> <%=flash[:success] %></p>
+        <% end %>
+<h2>Submitted Information</h2>
+<p>Name : <%=session[:name]%></p>
+<p>Location : <%=session[:location]%></p>
+<p>Language : <%=session[:language]%></p>
+<p>Comments : <%=session[:comments]%></p>
+<br>
+<a href='/index'>Go Back</a>
+
